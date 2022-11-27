@@ -56,7 +56,8 @@ table {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Mulish", sans-serif;
+  background-color: #F5FAFE;
 }
 
 .container {
@@ -66,4 +67,8 @@ body {
 
 img {
   max-width: 100%;
+}
+
+.navbar-top {
+  background-color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
