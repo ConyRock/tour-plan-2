@@ -58,6 +58,7 @@ table {
 body {
   font-family: "Mulish", sans-serif;
   background-color: #F5FAFE;
+  color: #333333;
 }
 
 .container {
@@ -69,6 +70,67 @@ img {
   max-width: 100%;
 }
 
-.navbar-top {
+.navbar {
   background-color: #FFFFFF;
+}
+.navbar-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+.navbar-top__search {
+  margin-right: auto;
+  margin-left: 108px;
+}
+
+.search {
+  display: flex;
+  position: relative;
+  height: 40px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.search__input {
+  width: 350px;
+  height: 100%;
+  background-color: #F5FAFE;
+  border: none;
+  padding: 12px 75px 13px 23px;
+  outline: none;
+  font-family: "Mulish";
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+.search__button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  width: 65px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.user__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.user__name {
+  margin-left: 18px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
 }/*# sourceMappingURL=style.css.map */
