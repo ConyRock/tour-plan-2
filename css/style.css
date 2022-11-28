@@ -83,6 +83,26 @@ img {
   margin-right: auto;
   margin-left: 108px;
 }
+.navbar-bottom {
+  padding: 31px 0;
+  background-color: #0A223D;
+}
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+}
+.navbar-menu__link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.logo {
+  width: 177px;
+}
 
 .search {
   display: flex;
@@ -99,7 +119,6 @@ img {
   padding: 12px 75px 13px 23px;
   outline: none;
   font-family: "Mulish";
-  font-style: normal;
   font-size: 12px;
   line-height: 15px;
 }
@@ -130,7 +149,6 @@ img {
 .user__name {
   margin-left: 18px;
   font-family: "Mulish";
-  font-style: normal;
   font-size: 14px;
   line-height: 18px;
 }/*# sourceMappingURL=style.css.map */
