@@ -156,6 +156,24 @@ img {
   line-height: 18px;
 }
 
+.breadcrumb {
+  padding: 18px 0;
+}
+.breadcrumb-list {
+  display: flex;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 13px;
+}
+.breadcrumb-list__item:not(:last-child)::after {
+  content: "/";
+  margin-right: 2px;
+}
+.breadcrumb-list__link {
+  color: #0A223D;
+  text-decoration: none;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 92%;
