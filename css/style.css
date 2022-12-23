@@ -62,7 +62,7 @@ body {
 }
 
 .container {
-  max-width: 1160px;
+  max-width: 1108px;
   margin: auto;
 }
 
@@ -72,6 +72,7 @@ body {
   border-radius: 4px;
   font-family: Nunito;
   border: none;
+  cursor: pointer;
 }
 
 img {
@@ -210,7 +211,12 @@ img {
 }
 .hotel-grid {
   display: flex;
-  align-items: flex-start;
+  justify-content: space-between;
+}
+.hotel-grid__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .stars {
@@ -383,6 +389,14 @@ img {
 }
 .call-center__num {
   margin-left: 8px;
+}
+
+.map {
+  width: 347px;
+  height: 213px;
+}
+.map__iframe {
+  border-radius: 10px;
 }
 
 @media (max-width: 1200px) {

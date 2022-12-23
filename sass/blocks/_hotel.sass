@@ -21,7 +21,11 @@
       margin-left: 14px
   &-grid
     display: flex
-    align-items: flex-start
+    justify-content: space-between
+    &__wrap
+      display: flex
+      flex-direction: column
+      justify-content: space-between
 
 .stars
   width: 100%
@@ -167,3 +171,9 @@
     text-decoration: none
   &__num
     margin-left: 8px
+
+.map
+  width: 347px
+  height: 213px
+  &__iframe
+    border-radius: 10px
