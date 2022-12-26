@@ -3,21 +3,8 @@
     max-width: 92%
   .slider
     height: 435px
-@media (max-width: 992px)
-  .hotel
-    &-grid
-      align-items: center
-      flex-direction: column
-      &__slider
-        margin: 0
-        margin-bottom: 30px
-      &__wrap
-        width: 100%
-        flex-direction: row
-        justify-content: space-between
-      &__booking
-        margin-right: 20px
 
+@media (max-width: 992px)
   .navbar
     &-top
       padding: 30px 0
@@ -35,10 +22,26 @@
   .search
     max-width: 340px
 
+  .hotel
+    padding-bottom: 60px
+    &-grid
+      align-items: center
+      flex-direction: column
+      &__slider
+        margin: 0
+        margin-bottom: 30px
+      &__wrap
+        width: 100%
+        flex-direction: row
+        justify-content: space-between
+      &__booking
+        margin-right: 20px
+
   .slider
     max-width: 100%
     min-width: none
-    height: 500px
+    height: 80%
+    min-height: 180px
 
   .booking
     width: 100%
@@ -70,6 +73,7 @@
 
   .hotel
     padding-top: 5px
+    padding-bottom: 40px
     &-info
       &__rating
         display: none
@@ -81,9 +85,21 @@
         order: -1
         margin-left: 0
         margin-top: 0
+    &-grid
+      padding-top: 18px
+      &__wrap
+        flex-direction: column
+      &__booking
+        margin-right: 0
+        margin-bottom: 20px
+      &__slider
+        margin-bottom: 20px
 
   .stars
     flex-basis: content
+
+  .slider
+    height: 80%
 
 @media (max-width: 576px)
   .logo
