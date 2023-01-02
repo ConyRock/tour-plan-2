@@ -1,1 +1,68 @@
-
+.reviews
+  padding: 40px 0 70px 0
+  &__title
+    margin-bottom: 70px
+    font-weight: 700
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    color: $text
+  &-slider
+    &__profile
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-bottom: 32px
+    &__avatar
+      width: 90px
+      height: 90px
+      border-radius: 50%
+      margin-bottom: 9px
+      object-fit: cover
+    &__user-name
+      color: $primary
+      margin-bottom: 10px
+      font-weight: 700
+      font-size: 12px
+      line-height: 15px
+    &__date
+      color: $text
+      font-weight: 400
+      font-size: 10px
+      line-height: 13px
+      margin-bottom: 4px
+    &__button
+      position: absolute
+      z-index: 2
+      top: 50%
+      transform: translateY(-50%)
+      border: none
+      cursor: pointer
+      width: 30px
+      height: 30px
+      background-color: transparent
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 10px
+      &--prev
+        left: 18px
+        background-image: url(../img/reviews/arrow-prev.svg)
+      &--next
+        right: 18px
+        background-image: url(../img/reviews/arrow-next.svg)
+    &__item
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__text
+      width: 537px
+      color: $text
+      font-weight: 400
+      font-size: 12px
+      line-height: 160%
+  &-rating
+    &__wrap
+      display: flex
+      justify-content: space-between
+      width: 48px
