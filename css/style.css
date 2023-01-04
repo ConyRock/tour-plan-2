@@ -491,7 +491,7 @@ img {
   padding: 40px 0 70px 0;
 }
 .reviews__title {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 45px;
@@ -530,7 +530,7 @@ img {
 .reviews-slider__button {
   position: absolute;
   z-index: 2;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
   border: none;
   cursor: pointer;
@@ -550,12 +550,24 @@ img {
   background-image: url(../img/reviews/arrow-next.svg);
 }
 .reviews-slider__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.reviews-slider__item:before {
+  position: absolute;
+  content: "";
+  width: 731px;
+  height: 86.5%;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  top: 45px;
+  z-index: -1;
+}
 .reviews-slider__text {
   width: 537px;
+  margin-bottom: 30px;
   color: #333333;
   font-weight: 400;
   font-size: 12px;
@@ -629,6 +641,19 @@ img {
   .map__iframe {
     width: 100%;
   }
+  .reviews {
+    padding-bottom: 60px;
+  }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .reviews-slider__item:before {
+    width: 80%;
+  }
+  .reviews-slider__text {
+    width: 65%;
+  }
 }
 @media (max-width: 768px) {
   .navbar-top__search, .navbar-top__user, .navbar-bottom {
@@ -695,6 +720,44 @@ img {
   }
   .newsletter-wrapper__title {
     margin-bottom: 37px;
+  }
+  .newsletter-title {
+    width: 350px;
+    max-width: 92%;
+    align-items: start;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter-title__strong {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .reviews {
+    padding-bottom: 50px;
+  }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 42px;
+  }
+  .reviews-slider__item:before {
+    width: 100%;
+  }
+  .reviews-slider__text {
+    width: 85%;
+  }
+  .reviews-slider__button {
+    top: 45px;
+  }
+  .reviews-slider__button--prev {
+    left: 50%;
+    transform: translateX(-100%) translateY(-50%);
+    margin-left: -75px;
+  }
+  .reviews-slider__button--next {
+    right: 50%;
+    transform: translateX(100%) translateY(-50%);
+    margin-right: -75px;
   }
 }
 @media (max-width: 576px) {
