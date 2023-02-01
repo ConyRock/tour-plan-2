@@ -568,6 +568,7 @@ img {
 .reviews-slider__text {
   width: 537px;
   margin-bottom: 30px;
+  text-align: justify;
   color: #333333;
   font-weight: 400;
   font-size: 12px;
@@ -576,7 +577,10 @@ img {
 .reviews-rating__wrap {
   display: flex;
   justify-content: space-between;
-  width: 48px;
+  width: 100%;
+}
+.reviews-rating__star {
+  margin: 0 1px;
 }
 
 @media (max-width: 1200px) {
