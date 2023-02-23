@@ -2,13 +2,65 @@
   background-color: $secondary
   padding: 108px 0 46px 0
   color: $gray
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat(4, minmax(250px, 1fr))
+    gap: 20px
+    grid-auto-rows: minmax(40px, min-content)
+  &-logo
+    width: 150px
+  &__logo
+    grid-row: 1 / 3
+    align-self: center
+  &__categories
+    grid-row: 1 / 4
+  &__sosial
+    &-network
+      display: flex
+      grid-row: 2 / 3
+      grid-column: 3 / 5
+    &-links
+      display: flex
+      align-items: center
+      align-items: flex-start
+      justify-content: space-between
+      width: 84px
+    &-link
+      display: flex
+      align-items: center
+      height: 24px
+  &__legal
+    margin-left: auto
+  &__contact
+    &-details
+      grid-row: 4 / 5
+      grid-column: span 2
+    &-form
+      grid-row: 4 / 5
+  &__ul
+    font-weight: 400
+    font-size: 14px
+    line-height: 160%
+  &__item
+    display: flex
+    margin-bottom: 22px
+    &-image
+      height: 24px
+      width: 24px
+      margin-right: 18px
+  &__text
+    margin-bottom: 22px
   &__title
-    margin-bottom: 15px
+    margin-bottom: 20px
     color: $light
     font-weight: 700
     font-size: 18px
     line-height: 23px
     text-transform: uppercase
+    &_mr-42
+      margin: 0 42px 0 0
+    &_mb-28
+      margin-bottom: 28px
   &__link
     color: $gray
     font-weight: 400
@@ -19,6 +71,7 @@
     display: flex
     flex-wrap: wrap
     justify-content: space-between
+    align-items: center
     width: 539px
   &__input
     width: 255px
@@ -56,6 +109,7 @@
     line-height: 15px
     font-family: Mulish
   &__info
+    display: flex
     font-weight: 700
     font-size: 12px
     line-height: 15px
