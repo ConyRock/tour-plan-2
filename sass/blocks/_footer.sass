@@ -4,7 +4,7 @@
   color: $gray
   &-wrapper
     display: grid
-    grid-template-columns: repeat(4, minmax(250px, 1fr))
+    grid-template-columns: repeat(4, minmax(150px, 1fr))
     gap: 20px
     grid-auto-rows: minmax(40px, min-content)
   &-logo
@@ -37,6 +37,7 @@
       grid-column: span 2
     &-form
       grid-row: 4 / 5
+      grid-column: span 2
   &__ul
     font-weight: 400
     font-size: 14px
@@ -72,9 +73,8 @@
     flex-wrap: wrap
     justify-content: space-between
     align-items: center
-    width: 539px
   &__input
-    width: 255px
+    flex-basis: 48%
     height: 50px
     border-radius: 4px
     padding: 18px 23px
