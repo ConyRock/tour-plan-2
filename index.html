@@ -14,20 +14,20 @@
     rel="stylesheet">
   <!-- swiper   -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <!-- main.js -->
-  <script src="js/main.js" defer></script>
+  <script defer src="js/main.js"></script>
 </head>
 
 <body>
-  <header class="navbar">
+  <header class="navbar navbar_mobile_fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
           <img src="img/navbar/horisontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__img">
         </a>
 
-        <form action="#" class="search navbar-top__search">
+        <form action="#" class="search navbar-top__search navbar-top__search_mobile_hidden">
           <input type="text" placeholder="Search Location" class="search__input">
           <button class="search__button">
             <img src="img/navbar/search-button.svg" alt="Icon: search" class="search__img">
@@ -35,12 +35,12 @@
         </form>
         
 
-        <a href="#" class="user navbar-top__user">
+        <a href="#" class="user navbar-top__user navbar-top__user_mobile_hidden">
           <img src="img/navbar/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
 
-        <button class="menu-button navbar-top__menu-button">
+        <button class="menu-button navbar-top__menu-button" data-menu-button>
           <span class="menu-button__line"></span>
           <span class="menu-button__line"></span>
           <span class="menu-button__line"></span>
@@ -54,6 +54,20 @@
     <div class="navbar-bottom">
       <div class="container">
         <ul class="navbar-menu">
+          <li class="navbar-menu__item navbar-menu__item_mobile_visible">
+            <a href="#" class="user navbar-menu__user">
+              <img src="img/navbar/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
+              <span class="user__name user__name">Nathan</span>
+            </a>
+          </li>
+          <li class="navbar-menu__item navbar-menu__item_mobile_visible">
+            <form action="#" class="search navbar-menu__search">
+              <input type="text" placeholder="Search Location" class="search__input">
+              <button class="search__button">
+                <img src="img/navbar/search-button.svg" alt="Icon: search" class="search__img">
+              </button>
+            </form>
+          </li>
           <li class="navbar-menu__item">
             <a href="#" class="navbar-menu__link">All Deals</a>
           </li>

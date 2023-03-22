@@ -120,10 +120,54 @@
       // max-width: 92%
 
 @media (max-width: 768px)
+  body
+    padding-top: 78px
   .navbar
-    &-top__search, &-top__user, &-bottom
+    &-top
+      &__search, &__user
+        &_mobile
+          &_hidden
+            display: none
+    &_mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &-bottom
       display: none
-
+      position: fixed
+      padding-top: 32px
+      top: 76px
+      right: 0
+      bottom: 0
+      left: 0
+      &_visible
+        display: block
+    &-menu
+      flex-direction: column
+      &__search
+        margin-bottom: 20px
+      &__item
+        margin-bottom: 20px
+        max-width: 92%
+        &_mobile
+          &_visible
+            display: block
+  .user
+    flex-direction: column
+    justify-content: center
+    text-transform: none
+    &__name
+      margin-top: 10px
+      margin-bottom: 7px
+      margin-left: 0
+      &_light
+        color: $light
+  .search
+    width: 340px
+    max-width: 100%
   .menu-button
     display: flex
     flex-direction: column
